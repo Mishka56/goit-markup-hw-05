@@ -619,8 +619,7 @@ address {
 		0 1px 1px 0 rgba(0, 0, 0, 0.14),
 		0 1px 3px 0 rgba(0, 0, 0, 0.12),
 		0 2px 1px 0 rgba(0, 0, 0, 0.2);
-	transition:
-		transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-backdrop {
@@ -644,10 +643,9 @@ address {
 	border-radius: 50%;
 	cursor: pointer;
 	background-color: #e7e9fc;
-
 	transition:
 		background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-		border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+		border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-button-close:hover,
@@ -742,16 +740,19 @@ address {
 }
 
 .modal-textarea {
+	font-size: 12px;
+	line-height: 1.17;
+	letter-spacing: 0.04em;
+	color: rgba(46, 47, 66, 0.4);
+	background-color: transparent;
 	border: 1px solid rgba(46, 47, 66, 0.4);
 	border-radius: 4px;
 	width: 360px;
 	height: 120px;
-	padding-top: 8px;
-	padding-left: 16px;
-	padding-right: 16px;
+	padding: 8px 16px;
 	resize: none;
-	outline: none;
-	transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	outline: transparent;
+	transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-textarea:focus {
@@ -789,6 +790,11 @@ address {
 	width: 16px;
 	height: 16px;
 	margin-right: 8px;
+	fill: transparent;
+	transition:
+		background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+		border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+		fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .checkbox-link-text {
@@ -802,12 +808,15 @@ address {
 	background-color: #404bbf;
 	border-color: transparent;
 	fill: #f4f4fd;
+	border: none;
 }
 
 .form-button-submit {
-	transform: translateX(50%);
+	display: block;
+transform: translateX(50%);
 	font-family: "Roboto", sans-serif;
 	font-weight: 500;
+	margin-top: 24px;
 	font-size: 16px;
 	line-height: 1.5;
 	letter-spacing: 0.04em;
@@ -820,4 +829,6 @@ address {
 	box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
 	background: #4d5ae5;
 	border: none;
+	cursor: pointer;
+	transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
