@@ -471,6 +471,7 @@ address {
 	flex-direction: column;
 	justify-content: center;
 	align-items: flex-start;
+	margin-right: 80px;
 }
 
 .social-media-title {
@@ -512,6 +513,62 @@ address {
 
 .media-footer-icons {
 	fill: #f4f4fd;
+}
+
+.subscribe-title {
+	display: inline-block;
+	font-family: "Roboto", sans-serif;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.5;
+	letter-spacing: 0.02em;
+	color: #fff;
+	margin-bottom: 16px;
+}
+
+.form-subscribe {
+	display: flex;
+	gap: 24px;
+}
+
+.subscribe-email-form {
+	border: 1px solid #fff;
+	border-radius: 4px;
+	width: 264px;
+	height: 40px;
+	box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+	background-color: transparent;
+}
+
+.subscribe-email-form::placeholder {
+	font-family: "Roboto", sans-serif;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 2;
+	letter-spacing: 0.04em;
+	color: #fff;
+}
+
+.form-subscribe-button {
+	font-family: "Roboto", sans-serif;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 4px;
+	min-width: 165px;
+	height: 40px;
+	background-color: #4d5ae5;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.5;
+	letter-spacing: 0.04em;
+	color: #fff;
+	cursor: pointer;
+	border: none;
+}
+
+.form-subscribe-icon {
+margin-left: 16px;
 }
 
 .container-form-registration {
@@ -566,7 +623,7 @@ address {
 .modal-backdrop {
 	visibility: visible;
 	pointer-events: auto;
-	opacity: 1;
+	opacity: 0;
 }
 
 .modal-button-close {
@@ -741,7 +798,6 @@ address {
 	border-color: transparent;
 	fill: #f4f4fd;
 }
-
 
 .form-button-submit {
 	transform: translateX(50%);
