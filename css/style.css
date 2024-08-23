@@ -660,7 +660,7 @@ address {
 }
 
 .modal-button-close:hover .modal-close-icon,
-.modal-button-close:hover .modal-close-icon {
+.modal-button-close:focus .modal-close-icon {
 	fill: #ffffff;
 }
 
