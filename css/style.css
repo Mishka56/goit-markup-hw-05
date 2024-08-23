@@ -623,7 +623,7 @@ margin-left: 16px;
 .modal-backdrop {
 	visibility: visible;
 	pointer-events: auto;
-	opacity: 0;
+	opacity: 1;
 }
 
 .modal-button-close {
